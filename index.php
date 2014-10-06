@@ -7,12 +7,16 @@
 <body>
 	 <h2>1. leht</h2>
 	 	<a href="http://localhost/2-periood-1-harjutus/second_page.php?name=juku&age=99&hobi=jalgrattad">Teine leht</a>
-	 	</br>
+	 		</br>
 		 <?php 
-		 $link_file = "second_page.php";
-		 $age = 32;
-			echo "<h1>" . $_GET["name"] . "</h1>";
+			 //echo "<h1>" . $_GET["name"] . "</h1>";
+			 $link_file = "second_page.php";
+			 $name = "Merili";
+			 $age = 21;
 		 ?>
+		 <a href="
+		 	<?php echo $link_file . '?name=' . $name . '&age=' . $age; ?>">Teine leht
+		 </a>
 
 </body>
 </html>
